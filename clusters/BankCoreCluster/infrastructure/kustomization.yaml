@@ -6,3 +6,4 @@ resources:
   - aws-load-balancer-controller/cert-manager.yaml
   - aws-load-balancer-controller/controller.yaml
   - aws-load-balancer-controller/ingress-class.yaml
+  - weave-gitops/dashboard.yaml
