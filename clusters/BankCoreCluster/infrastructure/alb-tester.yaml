@@ -54,13 +54,13 @@ spec:
     app: nginx
   type: NodePort
 
-#---
-#apiVersion: elbv2.k8s.aws/v1beta1
-#kind: TargetGroupBinding
-#metadata:
-#  name: nginx-tgb
-#spec:
-#  serviceRef:
-#    name: nginx
-#    port: 80
-#  targetGroupARN: arn:aws:elasticloadbalancing:us-west-2:616106644946:targetgroup/BankCo-EKSIn-QH5EUWTUSO8X/16be201e9ceaee18
+---
+apiVersion: elbv2.k8s.aws/v1beta1
+kind: TargetGroupBinding
+metadata:
+  name: nginx-tgb
+spec:
+  serviceRef:
+    name: nginx
+    port: 80
+  targetGroupARN: arn:aws:elasticloadbalancing:us-west-2:616106644946:targetgroup/BankCo-EKSIn-IRKSRVZEABEL/a600af7d9175e7c3
